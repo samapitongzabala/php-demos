@@ -60,3 +60,21 @@ function comment($post_id){
 			} 
 }
 
+function form_feedback($feedback,$errors){
+	if( isset($feedback) ){
+		echo '<div class="pidbak">';
+		echo '<h3 class="feedback">';
+		echo $feedback;
+		echo '</h3>';
+
+		if(! empty($errors) ){
+			echo '<ul>';
+			foreach($errors AS $error ){
+				echo '<li>'.$error.'</li>';
+			}
+			echo '</ul>';
+		}
+
+		echo '</div>';
+	}
+}
