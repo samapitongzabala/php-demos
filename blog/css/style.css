@@ -1,0 +1,205 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: calibri,arial,sans-serif;
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	background: #FFF;
+}
+
+a{
+	color: #367;
+}
+
+header{
+		text-align: center;
+		background: #000 url(http://placekitten.com/1200/500);
+		padding: .5em;
+		font-size: 5em;
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h1 a{
+		text-decoration: none;
+		color: #FFF;
+		text-shadow: 1px 1px 5px #000;
+		font-weight: 200;
+	}
+
+	article{
+		padding: 1em 0;
+		border-bottom: 1px solid #888;
+		margin-bottom: 1em;
+	}
+
+	article:last-child{
+		border-bottom: 0;
+	}
+
+	article h2{
+		color: cadetblue;
+		font-size: 2.5em;
+		font-weight: 300;
+		margin-bottom: .25em;
+	}
+
+	article h3{
+		color: #555;
+		font-size: .875em;
+		font-weight: 300;
+		margin-bottom: 1.25em;
+	}
+
+main,aside{
+		padding: 2em;
+	}
+
+	main h2{
+		font-size: 2.5em;
+		font-weight: 300;
+		margin-bottom: .25em;
+	}
+
+	aside{
+		background: #eee;
+	}
+
+	aside h2{
+		font-weight: 300;
+		font-size: 1.5em;
+		margin-bottom: .125em;
+	}
+
+	aside h2 a{
+		text-decoration: none;
+		color: #333;
+	}
+
+	aside ul{
+		margin-left: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	aside li{
+		line-height: 1.5;
+	}
+
+	label{
+		display: block;
+		width: auto;
+		margin: 1em 0 .5em;
+	}
+
+	input{
+		display: block;
+		width: 250px;
+		height: 45px;
+	}
+
+	#searchBar,#searchButton{
+		float:left;
+		margin-bottom: 2em;
+	}
+
+	#searchBar{
+		width:80%;
+		border: 1px solid cadetblue;
+		padding: 0 1em;
+	}
+
+	#searchButton{
+		width:20%;
+		background: cadetblue;
+		color: #FFF;
+		border: none;
+	}
+
+	textarea{
+		height: 200px;
+		width: 250px;
+	}
+
+	input[type="submit"]{
+		width: auto;
+	}
+
+	main ul{
+		margin-left: 2em;
+	}
+
+	main li{
+		line-height: 1.5;
+	}
+
+footer{
+		padding: 2em;
+		background: #333;
+		color: #FFF;
+	}
+
+	.comments h2{
+		font-size: 2em;
+		font-weight: 300;
+	}
+
+	.comments li{
+		list-style: none;
+		padding: 2em;
+		background: #e2e2e2;
+		margin: 1em 0;
+	}
+
+	.comments+h2{
+		font-size: 2em;
+		margin-top: 2em;
+	}
+
+@media screen and (min-width: 700px){
+
+
+html{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
+background: #cedce7; /* Old browsers */
+background: -moz-linear-gradient(top,  #cedce7 0%, #596a72 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #cedce7 0%,#596a72 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #cedce7 0%,#596a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+
+}
+	body{
+		max-width: 1200px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	header{
+		width: 100%;
+		flex: 1 0 auto;
+		order: 0;
+	}
+
+	main{
+		width: 65%;
+		order: 2;
+	}
+
+	aside{
+		width: 35%;
+		padding: 3em;
+		order: 1;
+	}
+
+	footer{
+		width: 100%;
+		order: 3;
+	}
+}

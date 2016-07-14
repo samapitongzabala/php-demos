@@ -1,0 +1,35 @@
+body{
+	background: aliceblue;
+	font-family: sans-serif;
+}
+
+p{
+	color: crimson;
+}
+
+nav{
+	background: #fff;
+	adding: 0 1em;
+}
+
+nav li{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+}
+
+.message{
+	background-color: khaki;
+	width: 30%;
+	border: solid 6px gainsboro;
+	padding: 1em;
+	border-radius: 40px;
+}
+
+.success{
+	border: solid 6px green;
+}
+
+.error{
+	border: solid 6px red;
+}
